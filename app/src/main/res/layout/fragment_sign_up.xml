@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.kesho.cwsfinancepetrojet.SignUp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0eeee">
+             <TextView
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/newSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pageName"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="صفحة انشاء الحساب"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearsignIn">
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signUpEditVendorNumber"
+                android:hint="رقم المورد"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:ems="10"
+                android:inputType="phone"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                android:layout_gravity="right"
+                android:gravity="right"
+                app:met_maxCharacters="12"
+                app:met_primaryColor="#000000"
+                android:maxLines="1"
+                />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signupeditPassword"
+                android:hint="كلمة السر"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:maxLines="1"
+                android:ems="10"
+                android:inputType="numberPassword"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="12"
+                app:met_primaryColor="#000000"
+                />
+   <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signupeditPassCheck"
+                android:hint="تاكيد كلمة السر"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:maxLines="1"
+                android:ems="10"
+                android:inputType="numberPassword"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="12"
+                app:met_primaryColor="#000000"
+                />
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="انشاء حساب"
+                android:textStyle="bold"
+                android:textColor="#ffebcd"
+                android:background="#1c1c1c"
+
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vendorNotInDataBase"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="                                                      "/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

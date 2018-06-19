@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kesho.cwsfinancepetrojet.ChecksFragment"
+    android:layout_gravity="right"
+    android:gravity="right"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:background="#f5f5dc"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vendorTitleChecks"
+            android:text=""
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="#0d0d0d"
+            android:layout_gravity="right"
+            android:gravity="right"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSearchBycheckNumberResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="left"
+                android:text="بحث برقم الشيك" />
+
+            <EditText
+                android:id="@+id/searchEditTextResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:hint="ادخل رقم الشيك باللغة الانجليزية" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSearchByPo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="left"
+                android:text=" بحث بامر التوريد" />
+
+            <EditText
+                android:id="@+id/editSearchByPo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="ادخل امر التوريد باللغة الانجليزية" />
+        </LinearLayout>
+
+    <ListView
+        android:background="#f5f5dc"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"
+        android:layout_gravity="right"
+
+        >
+
+    </ListView>
+    </LinearLayout>
+
+</FrameLayout>

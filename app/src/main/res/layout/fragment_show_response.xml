@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kesho.cwsfinancepetrojet.ShowResponseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5dc"
+        android:id="@+id/titleForShowResponse"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="right"
+            android:text="........."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleResponseFrag"/>
+
+<RelativeLayout
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التاريخ  :"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:id="@+id/dateTxtView"
+        android:textSize="18dp"/>
+
+
+    <TextView
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/dateTxtView"
+        android:text="......."
+        android:id="@+id/txtDate"
+        android:textSize="18dp"/>
+    <TextView
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="160dp"
+        android:text="شهر    يوم"
+        android:layout_below="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:id="@+id/monthDayViewId"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="230dp"
+        android:text="شهر    يوم"
+        android:layout_toLeftOf="@+id/monthDayViewId"
+        android:layout_below="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:id="@+id/monthDayViewIdOnDelay"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monthDayViewId"
+        android:text="موعد استلامكم       :"
+        android:id="@+id/responsetxtView"
+        android:textSize="18dp"/>
+
+
+    <TextView
+        android:layout_below="@+id/monthDayViewId"
+        android:layout_marginRight="30dp"
+    android:layout_toLeftOf="@id/responsetxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".........."
+        android:id="@+id/showResponseText"
+        android:textSize="18dp"/>
+</RelativeLayout>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="يرجي العلم انه في حالة التأجيل يرجي الغاء طلب استلام الشيك من جانبكم و اعادة الطلب في الوقت الذي تم تحديده من طرف الادارة و سيتم اعطاء اهمية خاصة للشيكات المؤجلة"
+        android:id="@+id/msgOnDelayCases"
+            android:background="#ff7256"
+            android:layout_marginTop="50dp"
+        android:textSize="18dp"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="يرجي المتابعة مع ادارة التوريدات بالورش للتأكد من احقيتكم في استلام الشيكات قبل التوجه للادارة المالية لاستلام الشيكات"
+        android:id="@+id/msgOnResponseCases"
+            android:background="#ff7256"
+            android:layout_marginTop="50dp"
+        android:textSize="18dp"/>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

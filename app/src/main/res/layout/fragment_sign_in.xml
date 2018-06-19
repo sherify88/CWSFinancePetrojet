@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.kesho.cwsfinancepetrojet.SignIn"
+    android:background="#f5f5dc">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pinterest_petro"
+        android:id="@+id/imageview">
+    </ImageView>
+    <TextView
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newSlogan"
+        android:text="Central Workshop Financial Department"/>
+ <TextView
+        android:gravity="center"
+     android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pageName"
+     android:textSize="20dp"
+     android:text="صفحة تسجيل الدخول"
+     android:textStyle="bold"/>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_below="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearsignIn">
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signineditPhone"
+                android:hint="رقم المورد"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:ems="10"
+                android:inputType="number"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="12"
+                app:met_primaryColor="#000000"
+                android:maxLines="1"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signineditPassword"
+                android:gravity="right"
+                android:hint="كلمة السر"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:ems="10"
+                android:text=""
+                android:inputType="numberPassword"
+                android:maxLines="1"
+                app:met_baseColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="12"
+                app:met_primaryColor="#000000"
+                />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="تسجيل الدخول"
+        android:textStyle="bold"
+        android:textColor="#ffebcd"
+        android:background="#1c1c1c"
+
+        />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/gotoSignUpTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ليس لديك حساب ؟   انشاء حساب"
+            android:textSize="15dp"/>
+</LinearLayout>
+
+    </RelativeLayout>

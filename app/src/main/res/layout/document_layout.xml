@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentRight="true"
+    >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_alignParentRight="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="  رقم امر التوريد :"
+        android:id="@+id/orderId"/>
+    <TextView
+        android:id="@+id/docpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="......."
+        android:layout_marginRight="100dp"
+        android:textSize="20dp"
+
+        />
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderId"
+        android:textSize="20dp"
+        android:text="القيمة : "
+        android:id="@+id/kema"/>
+    <TextView
+        android:layout_below="@+id/docpo"
+    android:id="@+id/checkamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="......."
+    android:layout_marginRight="100dp"
+    android:textSize="20dp"
+
+    />
+    <TextView
+        android:layout_marginRight="5dp"
+        android:id="@+id/checkNoTextTitle"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kema"
+        android:textSize="20dp"
+        android:text="رقم الشيك : "
+    />
+    <TextView
+        android:layout_below="@+id/checkamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="......."
+    android:layout_marginRight="100dp"
+    android:textSize="20dp"
+        android:id="@+id/checkNo"
+
+    />
+    <TextView
+        android:layout_marginRight="5dp"
+        android:id="@+id/docStatus"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkNo"
+        android:textSize="20dp"
+        android:text="موقف الارتجاع : "
+    />
+    <TextView
+        android:layout_below="@+id/checkNoTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="......."
+    android:layout_marginRight="100dp"
+    android:textSize="20dp"
+        android:id="@+id/docStatusCode"
+
+    />
+    <TextView
+        android:layout_marginRight="5dp"
+        android:id="@+id/backDate"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/docStatusCode"
+        android:textSize="20dp"
+        android:text="تاريخ الارتجاع : "
+    />
+    <TextView
+        android:layout_below="@+id/docStatusCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="......."
+    android:layout_marginRight="100dp"
+    android:textSize="20dp"
+        android:id="@+id/backDateCode"
+
+    />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            android:text="طلب استلام الشيك"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderCheckBtn"
+            android:longClickable="true"
+
+            />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+
+        android:textSize="10dp"
+        android:text="حذف من القائمة نهائيا"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/removePermanently"
+        android:longClickable="true"
+
+        />
+        <Button
+
+
+        android:textSize="10dp"
+        android:text="الغاء الطلب"
+        android:textStyle="bold"
+            android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelCheckBtn"
+        android:longClickable="true"
+
+        />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

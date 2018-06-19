@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kesho.cwsfinancepetrojet.MainScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/petrojet">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:orientation="vertical"
+        android:id="@+id/linearsubject"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="#99000000"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSlogan"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:text="Together We Are Stronger"
+                android:textColor="#ffebcd"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:background="#3e2e2e"
+        android:layout_below="@+id/linearsubject"
+        android:weightSum="2">
+
+
+
+
+        <Button
+            android:id="@+id/btnSignUpMainScrn"
+            android:layout_width="200dp"
+            android:layout_weight="1"
+            android:layout_height="38dp"
+            android:text="Sign Up"
+            android:textColor="#ffebcd"
+            android:textStyle="bold"
+            android:background="#104e8b"
+
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnSignInMainScrn"
+            android:layout_width="200dp"
+            android:layout_height="38dp"
+            android:text="Sign In"
+            android:textStyle="bold"
+            android:textColor="#ffebcd"
+            android:background="#1874cd"
+
+            />
+    </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
